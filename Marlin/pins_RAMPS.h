@@ -513,26 +513,19 @@
 
     #elif ENABLED(MINIPANEL)
 
-      #define BEEPER_PIN        42
-      // not connected to a pin
-      #define LCD_BACKLIGHT_PIN 65   // backlight LED on A11/D65
+      #define BEEPER_PIN 37
+      #define LCD_BACKLIGHT_PIN -1
 
-      #define DOGLCD_A0         44
-      #define DOGLCD_CS         66
+      #define DOGLCD_A0  27
+      #define DOGLCD_CS  25
 
-      // GLCD features
-      //#define LCD_CONTRAST   190
-      // Uncomment screen orientation
-      //#define LCD_SCREEN_ROT_90
-      //#define LCD_SCREEN_ROT_180
-      //#define LCD_SCREEN_ROT_270
+      #define BTN_EN1 31
+      #define BTN_EN2 33
+      #define BTN_ENC 35
 
-      #define BTN_EN1           40
-      #define BTN_EN2           63
-      #define BTN_ENC           59
-
-      #define SD_DETECT_PIN     49
-      #define KILL_PIN          64
+      #define SDSS   53
+      #define SD_DETECT_PIN -1
+      #define KILL_PIN 64
 
     #elif ENABLED(ZONESTAR_LCD)
 
